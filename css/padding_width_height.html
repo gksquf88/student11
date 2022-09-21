@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>padding_width_height</title>
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{
+      width:1190px;
+      margin:0 auto;
+    }
+    section{
+      /* 2값   상하  좌우 */
+      /* padding: 50px 100px; */
+      padding: 2rem; /*body에 지정된 글자 크기의 2배*/
+      border: 10px dashed #000;
+      border-right: 0;
+      border-left: 0;
+      /* margin: 2rem; */
+    }
+    .section1{background-color: #ffb390;}
+    .section2{background-color: #90bcff;}
+    .section3{background-color: #94ff90;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="slide">
+      슬라이드
+    </div>
+    <!-- section.section$*3>h1>{section$}^p>lorem -->
+    <section class="section1">
+      <h1>section1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quasi qui laudantium, pariatur temporibus nostrum cupiditate eum commodi vero! Libero ducimus aspernatur maiores fugiat dicta eos atque quo sint ipsum?</p>
+    </section>
+    <section class="section2">
+      <h1>section2</h1>
+      <p>Voluptatem magnam eligendi facere neque cum enim in nulla, dolore debitis odio aut perferendis error commodi, deleniti temporibus beatae iure rerum voluptatum optio consequatur sint, maxime nemo nobis? Doloremque, culpa.</p>
+    </section>
+    <section class="section3">
+      <h1>section3</h1>
+      <p>Consequuntur rem quae quaerat voluptates aliquid nam nemo magni exercitationem ratione, soluta ipsum tempora deserunt laboriosam amet recusandae sed explicabo dolor vero magnam, doloribus commodi, fugiat corporis ad. Accusantium, necessitatibus!</p>
+    </section>
+    <div class="notice">
+      공지사항
+    </div>
+</div>
+</body>
+</html>
