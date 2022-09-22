@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>줄간격</title>
+  <style>
+    *{margin: 0 50px; padding: 0;}
+    body{}
+    p{
+      /* line-height: 1.4; */
+      line-height: 50px;
+      padding: 50px;
+      background-color: #ccc;
+      margin-bottom: 50px;
+      
+    }
+  </style>
+</head>
+<body>
+  <p>내용</p>
+  <!-- p.ex>lorem -->
+  <p class="ex">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum unde deleniti eius, eaque alias iure a. Voluptatibus aperiam itaque aut repellendus ut rerum, illum, nisi ipsum excepturi, quam laudantium deleniti.</p>
+  <!-- 1줄문자작성 -->
+  <style>
+    div{background-color: #ccc; margin-bottom: 50px;}
+    /* 높이는 상관없이  글자가 세로가운데  padding-top/ padding-bottom*/
+    .ex2{padding: 2rem 1rem;}
+    /* 요소의 높이를 결정- line-heigh 되도록 패딩사용 no 넣는다면 좌우위주로 */
+    .ex3{
+      /* height: 50px; */
+      line-height: 50px;
+      padding: 0 1rem;
+    }
+  </style>
+  <div class="ex2">내용</div>
+  <div class="ex3">내용</div>
+</body>
+</html>
