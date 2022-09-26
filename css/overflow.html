@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    /* <!-- 
+   .box{} 10
+   .box1{} 10 
+   .box.box2{} 10+10  
+   .box2{} 10
+   #sect1.box{} 100+10
+   -->  */
+   .box{
+    width: 300px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 50px;
+   }
+   .box2{overflow: scroll;}
+   .box3{overflow: auto;}
+   .box4{overflow: hidden;}
+  </style>
+  
+  
+</head>
+<body>
+  <!-- div.box.box$*4>lorem -->
+  <!-- .box.box$*4>lorem -->
+  <div class="box box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore similique earum doloremque repellendus ullam, atque optio voluptas, eius perspiciatis sequi corporis sapiente nostrum labore explicabo suscipit ab deserunt, voluptates perferendis!</div>
+  <div class="box box2">Itaque, veniam natus dolorem quam dolor optio libero velit placeat incidunt nobis nesciunt reiciendis, nisi rerum ipsum. Delectus placeat inventore ut illo, molestias dignissimos ab a quod illum harum explicabo.</div>
+  <div class="box box3">Esse vero praesentium eveniet omnis illo quia provident natus quasi minima perferendis? Cupiditate adipisci recusandae nesciunt. Fugiat, corporis? Velit obcaecati ipsum veritatis eius, alias perferendis pariatur animi error incidunt! Explicabo.</div>
+  <div class="box box4">Error assumenda quae fuga illum tempora voluptatibus vel laboriosam non labore eligendi, cupiditate velit iste fugit ipsum veritatis, consequatur, deserunt ipsam incidunt officiis tenetur illo molestiae aut dolorum iusto! Beatae.</div>
+</body>
+</html>
