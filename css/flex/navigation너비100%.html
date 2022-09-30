@@ -20,13 +20,24 @@
 
     .parent {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: stretch;
       background-color: #ccc;
 
     }
 
     .navigation{
-      width:100%;
+      /* 플렉스아이템 */
+      /* width:100%; */
+      /* 플렉스 아이템이 컨테이너에 맞게 확장여부 */
+      flex-grow: 0;
+      /* 플렉스아이테미 컨테이너에 맞게 축소여부__축소1 */
+      flex-shrink: 1;
+      /* 플렉스 아이템의 고유크기를 지정하는 방식
+      width/heigth가 지정되어 있으면 width 따르고
+      width/heigth도 basis도 없을 경우 플렉스 아이템의 자식크기만큼 */
+      flex-basis: auto;
 
     }
     .navigation> ul{
