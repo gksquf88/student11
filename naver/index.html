@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index.html</title>
+    <!-- bxSlider CSS file -->
+    <link href="src/css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/main/style.css" /> -->
   </head>
   <body>
     <!-- header>.header_wrap>.header_logo+nav+.header_util -->
@@ -597,5 +600,42 @@
         </div>
       </div>
     </header>
+    <!-- //header -->
+    <!-- 본문 .container -->
+    <div class="container">
+      <!-- 슬라이드 .main_slide -->
+      <div class="main_slide">
+        <div>
+          <div></div>
+          <div><img src="img/main/img_main_slide7.jpg" /></div>
+        </div>
+        <div>
+          <div></div>
+          <div><img src="img/main/img_main_slide9.jpg" /></div>
+        </div>
+        <div>
+          <div></div>
+          <div><img src="img/main/img_main_slide10.jpg" /></div>
+        </div>
+      </div>
+
+      <!-- //슬라이드 .main_slide -->
+    </div>
+    <!-- //본문 //.container -->
+    <footer></footer>
+    <!-- jQuery library -->
+    <script src="src/vendor/jquery-3.1.1.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="src/js/jquery.bxslider.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".main_slide").bxSlider({
+          mode: "fade",
+          moveSlides: 1, //한번에보여질 슬라이드수
+          infiniteLoop: true, //무한루프
+          speed: 800,
+        });
+      });
+    </script>
   </body>
 </html>
