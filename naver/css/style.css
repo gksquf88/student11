@@ -288,6 +288,7 @@ nav .gnb_menu_list .gnb_dropMenu_wrap{
   display: flex;
   justify-content: center;
   display: none; /*테스트후삭제*/
+  z-index: 10000;
 }
 /* 대메뉴 첫번째의 서브메뉴
 nav .gnb_menu_list 대메뉴의 첫번째
@@ -374,15 +375,78 @@ nav .gnb_menu_list 대메뉴의 첫번째
 
 /* 플러그인 */
 /* bxslider */
+.bx-wrapper{overflow: hidden;}
 .bx-wrapper .bx-controls-direction a{
   width: 46px; height: 46px;
 }
 
 .bx-wrapper .bx-prev{
-  background-image: url(../img/sprite.png);
+  /* background-image: url(../img/sprite.png);
   background-position: -296px -99px;
-  background-size: 474px 1500px;
+  background-size: 474px 1500px; */
+  background-image: none;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(-45deg) translate(0, 50%);
+  transform-origin: 0 0;
+  left: 45px;
 }
 .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus{
-  background-position: -296px -99px;
+  /* background-position: -296px -99px; */
+  background-image: none;
+}
+
+.bx-wrapper .bx-next{
+  background-image: none;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(135deg) translate(0, 50%);
+  transform-origin: 0 0;
+  right: -25px;
+}
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
+  background-image: none;
+}
+/* pagination pager 변경*/
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+  bottom: 30px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+  width: 24px; height: 4px;
+  border-radius: 0;
+  border: 0 none;
+}
+
+/* 플러그인 */
+/* swiper */
+.swiper{}
+.swiper .swiper-wrapper{}
+.swiper .swiper-wrapper .swiper-slide{}
+.swiper-slide img{
+  width: 100%;
+  /*max-width: 100%; 원래 이미지크기 이상 되지 말아라_둘중하나만사용*/
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color:#fff;
+  opacity: 0.6;
+}
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover
+.swiper-button-prev:focus{
+  opacity: 1;
+  transition: color 0.2s;
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--naver-color);
+  border-radius: 0;
+  width: 20px; height: 6px;
+}
+
+.swiper-pagination-bullet-active{
+  width: 40px;
 }
