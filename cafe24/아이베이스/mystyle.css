@@ -1,3 +1,55 @@
+
+
+/* .ec-base-product .prdList .thumbnail{overflow: hidden;}
+.ec-base-product .prdList .thumbnail:hover a img{
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.ec-base-product .prdList .thumbnail:hover a img{
+  transform: scale(1.05);
+  transition: all 0.5s;
+} */
+
+
+/* weekly best */
+.ec-base-product ul.grid4 > li{
+position: relative;
+padding-bottom: 20px;
+
+}
+
+.ec-base-product .prdList .thumbnail .benefit{
+  
+  position: absolute;
+  left: 0;
+  bottom: -176px;
+
+}
+.ec-base-product .prdList .description{
+position: relative;
+margin-right: 0;
+display: flex;
+flex-direction: column;
+}
+
+
+
+.ec-base-product .prdList__item ul .color{
+  position: absolute;
+ right: 0;
+ top: -36px;
+ 
+}
+
+
+
+
+ 
+
+
+
+
+
 /* 플러그인 */
 /* swiper */
 .swiper-container {
@@ -34,3 +86,47 @@
 .swiper-pagination { width: 12px; height: 12px; background: transparent; opacity: 1; 
 }
 .swiper-pagination-bullet-active { width: 30px; transition: width .5s; border-radius: 5px;  }
+
+/* 스크롤시 header 변경 */
+@media (min-width:1024px){
+
+  
+  /* #header.fixed .topArea__logo{
+    position: absolute;
+    
+  } */
+ 
+ #header .navigation .btnNav{
+    display: none;
+   }
+  .navigation{
+    position: relative;
+   background-color: #6f6bf2;
+  }
+  .navigation .navigation_logo img{
+    position: absolute;
+    max-width: 180px;
+    min-height: 18px;
+    padding-top: 20px;
+  }
+  .navigation__category li a{
+    color: #fff;
+  }
+  #header .navigation__util path,
+  #header .navigation__util circle
+  {
+    stroke: #fff;
+  }
+
+  #header .navigation__util a:last-child path{
+    fill: #fff;
+    stroke: none;
+  } 
+}
+
+
+@media (max-width:1024px){
+  /*작은화면일때 화이트로고 안보이게*/
+      #header .navigation .navigation_logo img{display: none;} 
+  }
+  
